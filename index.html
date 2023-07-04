@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/417d36ea26.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <div class="nav">
+            <!-- <img src="" alt=""> -->
+            <!-- <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+            </div> -->
+            <div class="nav__item queryDiv">
+                <input type="text" class="searchField" id="userInput">
+                <button type="submit" class="submitBtn" onclick="recipeAPI(searchField.value)">Search</button>
+            </div>
+            <div class="nav__item">
+                <div class="btns-container">
+                    <button class="nav__button">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <span>ADD RECIPE</span>
+                    </button>
+                    <button class="nav__button">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <span>BOOKMARKS</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div>
+            <div class="recipeDiv">
+                <div class="recipes-container">
+                    <!-- <div class="recipe">
+                        <div class="recipeImg-div left-recipe-div">
+                            <img src="./images/photo-1508919801845-fc2ae1bc2a28.jpg" alt="" class="recipeImg">
+                        </div>
+                        <div class="right-recipe-div">
+                            <div id="recipeName">Falana</div>
+                            <div id="publisher">Dhimkana</div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="recipe-details">
+                    <div class="display-text">
+                        <span>
+                            Start by searching for a recipe or an ingredient. GLHF!
+                        </span>
+                    </div>
+                    <div class="mainRecipe hidden">
+                        <section class="mainRecipeImg-section">
+                            <img src="./images/photo-1508919801845-fc2ae1bc2a28.jpg" alt="" id="mainRecipeImg">
+                        </section>
+                        <section class="waitingState"> 
+                            <div class="orderServingDetails">
+                                <div>
+                                    <i class="fa-regular fa-clock timer icon"></i>
+                                    <span class="time"></span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-user-group mt-1 servants icon"></i>
+                                    <span class="serving"></span>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="ingredientsSection">
+                            <div class="ingredientsDiv">
+                                <h1 class="ingredientsHeading">RECIPE INGREDIENTS</h1>
+                                <div class="ingredientsContainer">
+                                
+                                </div>
+                            </div>
+                        </section>
+                        <section class="methodOfCooking">
+                            <h1 class="methodHeading">HOW TO COOK IT</h1>
+                            <div class="copywrite"></div>
+                            <a href="" class="recipe__url"></a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script> -->
+
+    <script src="./app.js"></script>
+</body>
+</html>
